@@ -1,0 +1,20 @@
+extends layout
+block content
+    .background
+        .mid
+            div#logo
+            input#textInput(type="text", name="textInput", placeholder="Sök", onkeyup="showHint(this.value)")
+            div#dropdown
+                ul#txtHint
+            
+        
+        select
+            each pers, i in person
+                option: #{pers.fName} #{pers.fName} #{pers.lName} #{i}
+
+        div#hideshow
+            div#add
+                form#formAddPerson(name="addperson",method="post",action="/addperson")
+                    input.popupInput#inputFirstName(type="text", placeholder="First Name", name="fName")
+                    input.popupInput#inputLastName(type="text", placeholder="Last Name", name="lName")
+                    button#btnSubmit(type="submit", onclick="toggleAdd()") Lägg till

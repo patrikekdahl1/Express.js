@@ -1,0 +1,114 @@
+a {
+  color: #00B7FF;
+}
+
+.background {
+   background-image: url("http://streetview.hitta.se/static_streetview/snapshots/1400x800/3066/19803/celsiusgatan10stockholm.jpg");
+   min-height: 800px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.mid{
+   position: absolute;
+   height: 44.1%;
+   width: 29%;
+   margin-left: 35.5%;
+   margin-top: 5%;
+   background: rgba(255, 255, 255,0.4);
+   -webkit-backdrop-filter: grayscale(0.5) contrast(1) blur(14px) brightness(1.3);
+   border-radius: 5%;
+   }
+
+ul:empty{
+   margin:0;
+}
+
+ul{
+   list-style-type: none;
+   padding:0;
+   margin-left:0;
+   white-space:nowrap;
+}
+
+li {
+   width: 100%;
+   list-style-type:none;
+   display:inline-block;
+   padding-left: 20px;
+   font-size: 17px;
+   font-weight: 400;
+   color: #111111;
+}
+
+#dropdown{
+   width: 326px;
+   max-height: 180px;
+   overflow-x: scroll;
+   overflow-y: scroll;
+   border-radius: 5px;
+   background: rgba(400, 255, 255,0.9);
+   margin-left: 43px;
+}
+
+input{
+   width: 324px;
+   height: 43px;
+   border: 1px solid gainsboro;
+   border-radius: 5px;
+   margin-left: 43px;
+   margin-top: 50px;
+   font-size: 17px;
+   font-weight: 400;
+   color: #111111;
+}
+
+#logo{
+   background-image: url("../images/hitta.se.svg");
+   height:130px;
+   width: 130px;
+   margin-left: 33%;
+   margin-top: 20px;
+}
+
+#add{
+   height: 44.1%;
+   width: 29%;
+   margin-left: 35.5%;
+   margin-top: 40%;
+   background: rgba(255, 255, 255,0.4);
+   border-radius: 5%;
+   -webkit-backdrop-filter: grayscale(0.5) contrast(1) blur(14px) brightness(1.3);
+}
+
+#hideshow{
+   display: none;
+}
+
+#btnSubmit{
+   width: 100%;
+}
+
+.popupInput{
+   margin-left: 43px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+button{
+   font-size: 16px;
+   border: none;
+   font-weight: 400;
+   color: #111111;
+   background: none;
+}
+
+button:hover{
+   color: #00a3ef;
+}
